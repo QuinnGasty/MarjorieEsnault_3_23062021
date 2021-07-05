@@ -20,9 +20,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('fonts/shrikhand-regular-webfont.eot');
+    src: url('fonts/shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/shrikhand-regular-webfont.woff') format('woff'),
+         url('fonts/shrikhand-regular-webfont.ttf') format('truetype'),
+         url('fonts/shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *
 {
     box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
 }
 
 header
@@ -109,18 +125,21 @@ header
     color: white;
     font-size: 1rem;
     border: none;
+    box-shadow: 1px 2px 10px #E1E1E1;
 }
 
 .operation
 {
     margin-top: 50px;
+    font-family: 'robotomedium', sans-serif;
 }
 
 .operation h2
 {
-    font-family: 'robotomedium';
+    font-family: 'robotomedium', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .operation_list
@@ -128,19 +147,45 @@ header
     border: 1px solid #F6F6F6;
     height: 70px;
     background-color: #F6F6F6;
-    border-radius: 30px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 10px #E1E1E1;
+}
+
+.operation_list p
+{
+    margin-top: 23px;
+}
+
+.operation_list span
+{
+    background-color: #9356DC;
+    color: white;
+    font-family: 'robotomedium', sans-serif;
+    font-size: .9rem;
+    margin-right: 20px;
+    margin-left: -10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 100%;
 }
 
 .operation_list i
 {
     color: #5E5D5D;
     font-size: 1.2rem;
+    margin-right: 20px;
 }
 
-
-
-
-
+.operation_list a
+{
+    text-decoration: none;
+    color: black;
+}
 
 
 footer
@@ -150,6 +195,16 @@ footer
     margin-top: 20px;
     background-color: #353434;
     width: 100%;
+    padding-bottom: 20px;
+}
+
+footer h1
+{
+    font-family: 'shrikhandregular', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    margin-top: 20px;
 }
 
 footer  a
@@ -159,6 +214,7 @@ footer  a
     font-family: 'robotomedium', sans-serif;
     font-size: .9rem;
     padding-left: 15px;
+    margin-bottom: 10px;
 }
 
 footer i

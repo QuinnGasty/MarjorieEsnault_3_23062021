@@ -48,7 +48,7 @@ body
     align-items: center;  
     width: 100vw;
     height: 100vh;
-    background-color: #9356DC;
+    background-color:rgba(147,86,220,80%);
     text-align: center;
     color: #FF79DA;
     position: fixed;
@@ -96,7 +96,7 @@ body
 
 @keyframes fadeout {
     0% {opacity: 100%;}  
-    100% {opacity: 0%; visibility:hidden;} 
+    100% {opacity: 0%; visibility: hidden;} 
 }    
 
 header
@@ -187,6 +187,12 @@ header
     cursor: pointer;
     background: linear-gradient(180deg, #FF79DA, #9356DC);
     box-shadow: 1px 3px 10px grey;
+    transition: .3s ease-out;
+}
+
+.explore:hover
+{
+    transform: scale(1.05);
 }
 
 .operation
@@ -279,7 +285,6 @@ header
     margin-left: 30px;
     margin-right: 30px;
     box-shadow: 1px 2px 10px #E1E1E1;
-    position: relative;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -294,7 +299,6 @@ header
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    position: relative;
 }
 
 .card_info
@@ -344,7 +348,7 @@ header
     margin-top: -10px;
 }
 
-.icone_fav-solid
+i.icone_fav_solid
 {
     display: none;
 }

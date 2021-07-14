@@ -270,7 +270,7 @@ header
 {
     background-color: #F6F6F6;
     padding-top: 30px;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 #restaurants h2
@@ -357,7 +357,6 @@ footer
 {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     background-color: #353434;
     width: 100%;
     padding-bottom: 20px;
@@ -385,4 +384,85 @@ footer  a
 footer i
 {
     padding-right: 10px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 907px) {
+    .operation
+    {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .operation h2 
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+    footer 
+    {
+        display: inline-block;
+        flex-direction: row;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    footer a
+    {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
+    #restaurants h2 
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .restaurants_responsive
+    {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+
+    .card_footer p
+    {
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 907px) {
+
+    .operation
+    {
+        width: 907px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .operation h2
+    {
+        text-align: center;
+    }
+
+    .operation_list
+    {
+        display: inline-block;
+        padding-right: 20px;
+        align-items: center; 
+        margin-right: 0;   
+    }
+    
 }

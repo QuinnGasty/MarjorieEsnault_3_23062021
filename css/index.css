@@ -286,6 +286,7 @@ header
     margin-right: 30px;
     box-shadow: 1px 2px 10px #E1E1E1;
     border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
 }
 
 .restaurant_card a
@@ -317,6 +318,8 @@ header
 {
     background-color: white;
     border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card_footer h3
@@ -344,13 +347,34 @@ header
     color: black;
     font-size: 1.4rem;
     margin-right: 15px;
-    padding-bottom: 20px;
-    margin-top: -10px;
+    padding-top: 10px;
+}
+
+i.icone_fav
+{
+    z-index: -99;
+    transition: color 150ms 50ms ease-in-out;
 }
 
 i.icone_fav_solid
 {
-    display: none;
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -22.5px;
+    transform: scale(0);
+    transition: transform 150ms 50ms ease-in-out;
+}
+
+i.icone_fav:hover
+{
+    color: transparent;
+}
+
+i.icone_fav:hover i.icone_fav_solid
+{
+    transform: scale(1);
 }
 
 footer
@@ -436,10 +460,7 @@ footer i
         padding-bottom: 30px;
     }
 
-    .card_footer p
-    {
-        margin-bottom: 0;
-    }
+    
 
 }
 
